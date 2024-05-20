@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* start task */
+.task {
+  margin-bottom: 40px;
+}
+
+.task h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px dashed #ccc;
+  padding-bottom: 10px;
+}
+
+.task1 .content {
+  background: #d32f2f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.task1 h3,
+.task1 p {
+  margin-bottom: 20px;
+}
+
+.task1 .iphone-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task1 .big-iphone {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.task1 .small-iphones {
+  display: flex;
+  gap: 10px;
+}
+
+.task1 .small-iphones img {
+  width: 50px;
+  cursor: pointer;
+}
+/* task 2 */
+.task2 .content {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.task2 i {
+  font-size: 2em;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Dark Mode for Task 2 */
+.dark-mode {
+  background-color: black !important;
+  color: white !important;
+}
+
+.dark-mode .mode-icon {
+  color: white !important;
+}
+
+.dark-mode .mode-icon.fa-sun {
+  color: white !important;
+}
+/* task3 */
+.task3 .faq {
+  background: #e8f5e9;
+  padding: 20px;
+}
+
+.task3 .faq-item {
+  background: #c8e6c9;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.task3 .faq-item h4 {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task3 .faq-item .faq-content {
+  display: none;
+  padding-top: 10px;
+  transition: 0.3s;
+}
+
+.task4 .rating {
+  background: #023951;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.task4 .stars i {
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .task h2 {
+    font-size: 1.2em;
+  }
+
+  .task1 .content,
+  .task2 .content,
+  .task3 .faq,
+  .task4 .rating {
+    padding: 15px;
+  }
+
+  .task1 .big-iphone {
+    width: 80px;
+  }
+
+  .task1 .small-iphones img {
+    width: 40px;
+  }
+
+  .task2 i {
+    font-size: 1.5em;
+  }
+
+  .task3 .faq-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task3 .faq-item h4 {
+    font-size: 1em;
+  }
+}
